@@ -1,0 +1,43 @@
+syntax = "proto3";
+package napari_rpc.protos;
+
+service Napari {
+  rpc AddImage (AddImageRequest) returns (IsOkReply) {}
+}
+
+message NdArray {
+  string dtype = 1;
+  string axes = 2;
+  repeated int64 shape = 3;
+  repeated double spacing = 4;
+  bytes array = 5;
+}
+
+message AddImageRequest {
+    NdArray data = 1;
+    optional int64 channel_axis = 2;
+    repeated bool rgb = 3;
+    repeated string colormap = 4;
+    repeated double contrast_limits = 5;
+    repeated double gamma = 6;
+    repeated string interpolation = 7;
+    repeated string rendering = 8;
+    repeated double iso_threshold = 9;
+    repeated double attenuation = 10;
+    repeated string name = 11;
+    repeated double scale = 12;
+    repeated double translate = 13;
+    repeated double rotate = 14;
+    repeated double shear = 15;
+    repeated double affine = 16;
+    repeated double opacity = 17;
+    repeated string blending = 18;
+    repeated bool visible = 19;
+    optional bool multiscale = 20;
+    optional bool cache = 21;
+}
+
+message IsOkReply {
+  bool has_error = 1;
+  optional string error = 2;
+}

@@ -1,0 +1,11 @@
+--- napari_pb2_grpc.py	2021-12-03 12:23:16.000000000 -0600
++++ napari_pb2_grpc_patched.py	2021-12-03 12:23:04.000000000 -0600
+@@ -2,7 +2,7 @@
+ """Client and server classes corresponding to protobuf-defined services."""
+ import grpc
+ 
+-import napari_pb2 as napari__pb2
++from . import napari_pb2 as napari__pb2
+ 
+ 
+ class NapariStub(object):

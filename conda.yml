@@ -1,0 +1,13 @@
+name: napari-rpc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - grpcio
+  - grpcio-tools
+  - napari
+  - python-lzo
+  - xarray
+  - pip
+  - pip:
+      - git+https://github.com/bhoeckendorf/napari-rpc.git
