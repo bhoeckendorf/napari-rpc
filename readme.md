@@ -1,4 +1,6 @@
 # napari RPC
+**This repository is discontinued. Please use [napari-zmq](https://github.com/bhoeckendorf/napari-zmq).**
+
 Use [napari](https://github.com/napari/napari) remotely.
 
 This is currently a proof of concept with severely limited functionality. 
@@ -11,7 +13,7 @@ This is currently a proof of concept. Setup and teardown are performed manually.
 Inside napari's IPython terminal, we'll start an RPC server that we can subsequently connect to, e.g. from a Jupyter 
 instance running on another machine. Please note that closing napari before manually stopping the server may freeze 
 napari 
-instaed of closing it.
+instead of closing it.
 
 ```Python
 # Excecute inside napari's IPython terminal.
