@@ -1,5 +1,8 @@
+This repository is discontinued. Please use the napari plugin
+[napari-remote-interaction](https://github.com/bhoeckendorf/napari-remote-interaction),
+which is not based on this repository.
+
 # napari RPC
-**This repository is discontinued. Please use [napari-zmq](https://github.com/bhoeckendorf/napari-zmq).**
 
 Use [napari](https://github.com/napari/napari) remotely.
 
